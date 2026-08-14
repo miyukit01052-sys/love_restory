@@ -1,0 +1,12 @@
+# OS and editor metadata
+.DS_Store
+Thumbs.db
+
+# Local credentials and dependency folders
+.env
+.env.*
+node_modules/
+
+# Local source materials not used by the current published LP
+assets/light-material-moodboard-v1.png
+assets/twin-leaf-signature.svg
