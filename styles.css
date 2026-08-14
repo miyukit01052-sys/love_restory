@@ -42,3 +42,47 @@
 /* Editorial variation: every visual type receives a distinct role in the scroll story. */
 .scene-image--desire{background-position:center 48%}.story-fear__image{background-position:center 42%;filter:saturate(.9) brightness(1.06)}.story-wish__image{background-position:center 55%}.story-meet__image{background-position:center 42%}.assurance__image{background-position:center 45%}.course__flower{right:0;left:auto;width:43%;background:url('assets/mirror-still-v2.png') 80% center/cover no-repeat;opacity:.27;mix-blend-mode:multiply}.course{background:linear-gradient(120deg,#f8e9e2e6,#fffaf5e6),url('assets/floral-prism-atmosphere-v1.png') center/cover}.final__woman{background-position:center 40%;filter:saturate(1.04) brightness(1.04)}.final__flowers{background-position:100% 70%;opacity:.42}.final::after{position:absolute;z-index:1;right:-10%;bottom:-13%;width:47%;height:42%;background:url('assets/floral-prism-atmosphere-v1.png') center/cover;content:"";opacity:.7;mix-blend-mode:screen;pointer-events:none}.final__copy{z-index:3}.final__jewel{z-index:4;background-position:center;box-shadow:0 0 0 10px #fffaf2bd,0 16px 38px #c38a6d50,0 0 54px #f7dd9c9c}.weeks__grid .week:nth-child(1) .week__photo{background-position:center 54%}.weeks__grid .week:nth-child(2) .week__photo{background-position:center 58%}.weeks__grid .week:nth-child(3) .week__photo{background-position:center 47%}.weeks__grid .week:nth-child(4) .week__photo{background-position:center 43%}
 @media(max-width:850px){.scene-image--desire{background-position:center 50%}.story-fear__image{background-position:center 35%;min-height:330px}.story-wish__image{background-position:center}.story-meet__image{background-position:center 42%}.assurance__image{background-position:center 35%;min-height:360px}.course__flower{width:100%;height:29%;background-position:center 30%;opacity:.18}.final__woman{background-position:center 35%;min-height:515px}.final::after{right:-17%;bottom:-6%;width:80%;height:25%;opacity:.58}.final__jewel{top:426px}}
+
+/* Focused refinement: a quieter Hero, a more personal bridge, and lighter Method motifs. */
+.double-line--hero{display:none}
+.hero__copy{margin-right:clamp(70px,11vw,190px);background:linear-gradient(135deg,#fffdfbe6,#fff8f0cc);box-shadow:0 16px 42px #d7ad9650}
+.hero__jewel{right:max(22px,2.5vw);bottom:5%;width:clamp(110px,11vw,180px);z-index:5}
+.life-before,.life-after{position:relative;display:grid;overflow:hidden;grid-template-columns:1fr 1.1fr;background:#fffaf5}
+.life-before{min-height:850px;background:linear-gradient(130deg,#fffdfb,#f7e3de)}
+.life-before__still{min-height:100%;background-position:center;background-size:cover}
+.life-before__copy,.life-after__copy{position:relative;z-index:1;max-width:690px;padding:clamp(90px,10vw,145px) clamp(40px,8vw,130px);font-family:var(--serif)}
+.life-before__copy h2,.life-after__copy h2{margin-bottom:42px;color:#ad6f6b}
+.life-before__copy>p{margin:0;color:#79635c}
+.life-before__copy blockquote{margin:9px 0 29px;padding:13px 0 13px 20px;border-top:0;border-bottom:0;border-left:1px solid #d8ae78;color:#5c4c46;font-size:clamp(16px,1.45vw,20px);line-height:1.85}
+.life-after{min-height:860px;background:linear-gradient(120deg,#fff9f5 0%,#fae2dc 52%,#fffaf5 100%)}
+.life-after__copy{justify-self:end}
+.life-after__copy p{margin-bottom:10px;font-size:clamp(15px,1.25vw,19px);line-height:1.9}
+.life-after__copy blockquote{margin:23px 0;padding:16px 0;color:#ac6e69;font-size:clamp(19px,1.8vw,27px)}
+.life-after__copy h3{margin:38px 0 0;color:#a96465;font-size:clamp(23px,2.55vw,38px);line-height:1.65}
+.life-after__image{min-height:100%;border-radius:130px 0 0 0;background-position:center;background-size:cover;box-shadow:-15px 22px 55px #c3957a3b}
+
+.method-icon{width:104px;height:90px;margin-bottom:18px;background:none!important;filter:none}
+.method-icon::before,.method-icon::after{box-sizing:border-box;box-shadow:none!important}
+.method-icon--notice::before{top:9px;left:29px;width:42px;height:54px;border:1.5px solid #c99d72;border-radius:48% 48% 46% 46%;background:linear-gradient(135deg,#fff,#edf7f5 60%,#f6e5dc);transform:rotate(-10deg)}
+.method-icon--notice::after{right:22px;bottom:16px;width:10px;height:10px;border:1px solid #c99d72;border-radius:50%;background:#fffdf8}
+.method-icon--explore::before{top:16px;left:25px;width:54px;height:54px;border:1.5px solid #c99d72;border-radius:50%;background:radial-gradient(ellipse at 50% 20%,transparent 0 30%,#f3dcd6 31% 33%,transparent 34%),radial-gradient(ellipse at 75% 55%,transparent 0 30%,#f3dcd6 31% 33%,transparent 34%),radial-gradient(ellipse at 50% 80%,transparent 0 30%,#f3dcd6 31% 33%,transparent 34%),radial-gradient(ellipse at 25% 55%,transparent 0 30%,#f3dcd6 31% 33%,transparent 34%)}
+.method-icon--explore::after{top:39px;left:48px;width:9px;height:9px;border:1px solid #c99d72;border-radius:50%;background:#fffdf8}
+.method-icon--meet::before,.method-icon--meet::after{top:22px;width:42px;height:42px;border:1.5px solid #c99d72;border-radius:50%;background:transparent;transform:none}
+.method-icon--meet::before{left:21px}.method-icon--meet::after{right:21px}
+.method-icon--receive::before{top:25px;left:34px;width:36px;height:36px;border:1.5px solid #c99d72;border-radius:50%;background:radial-gradient(circle at 42% 35%,#fff,#f5eee6 62%,#d9c5ab 100%)}
+.method-icon--receive::after{top:17px;left:19px;width:66px;height:54px;border:1.5px solid #c99d72;border-top:0;border-radius:0 0 50% 50%;background:transparent}
+.method-icon--move::before{top:24px;left:44px;width:17px;height:17px;border:1.5px solid #c99d72;border-radius:50%;background:#fffdf8;box-shadow:none}
+.method-icon--move::after{top:18px;left:31px;width:44px;height:44px;border:1px solid transparent;border-top-color:#c99d72;border-bottom-color:#c99d72;transform:rotate(45deg)}
+.method__steps::before,.method__steps::after{top:54px;border-color:#d9b27e}
+
+.course-card--first{position:relative;border-color:#d4aa75;background:linear-gradient(135deg,#fffdfbe8,#f5dfd7dc)}
+.first-edition{position:relative;margin-top:28px;padding:22px 18px 17px;border-top:1px solid #d8ae78;border-bottom:1px solid #d8ae78}
+.first-edition::before,.first-edition::after{position:absolute;top:-3px;width:5px;height:5px;border:1px solid #d8ae78;border-radius:50%;background:#fffaf5;content:""}.first-edition::before{left:0}.first-edition::after{right:0}
+.first-edition span{display:block;color:#b67970;font:15px/1.5 var(--display);letter-spacing:.08em}.course-card .first-edition strong{margin-top:7px}.first-edition p{margin:11px 0 0;color:#715b53;font-size:13px;line-height:1.75}
+
+@media(max-width:850px){
+  .hero{padding-bottom:36px}.hero__copy{margin:0 13px;padding:28px 18px 16px;background:#fffaf4e8;box-shadow:0 12px 33px #d8ae9650}.hero__jewel{right:5%;bottom:43%;width:100px;box-shadow:0 0 0 7px #fffaf4df,0 14px 30px #c68e6f52}.hero h1{font-size:28px}.hero .brand-title{font-size:64px}
+  .life-before,.life-after{display:flex;min-height:0;flex-direction:column}.life-before__still{min-height:330px;background-position:center}.life-before__copy,.life-after__copy{max-width:none;padding:62px var(--gutter)}.life-before__copy h2,.life-after__copy h2{margin-bottom:32px;font-size:30px}.life-before__copy blockquote{margin-bottom:24px;padding:11px 0 11px 15px;font-size:15px}.life-after__copy{order:2;padding-top:58px;padding-bottom:65px}.life-after__image{order:1;min-height:390px;border-radius:0;background-position:center}.life-after__copy p{font-size:15px}.life-after__copy h3{font-size:25px}
+  .method-icon{width:72px;height:70px}.method-icon--notice::before{top:7px;left:21px;width:31px;height:41px;border-width:1px}.method-icon--notice::after{right:13px;bottom:13px;width:8px;height:8px}.method-icon--explore::before{top:11px;left:17px;width:39px;height:39px;border-width:1px}.method-icon--explore::after{top:28px;left:33px;width:7px;height:7px}.method-icon--meet::before,.method-icon--meet::after{top:17px;width:29px;height:29px;border-width:1px}.method-icon--meet::before{left:12px}.method-icon--meet::after{right:12px}.method-icon--receive::before{top:19px;left:23px;width:26px;height:26px;border-width:1px}.method-icon--receive::after{top:13px;left:13px;width:46px;height:38px;border-width:1px}.method-icon--move::before{top:19px;left:30px;width:12px;height:12px;border-width:1px}.method-icon--move::after{top:14px;left:21px;width:30px;height:30px}.method__steps::before,.method__steps::after{display:none}
+  .first-edition{margin-top:22px;padding:18px 12px 14px}.first-edition span{font-size:14px}.first-edition p{font-size:12px}
+}
