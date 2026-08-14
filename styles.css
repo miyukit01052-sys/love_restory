@@ -112,9 +112,9 @@
 
 /* White morning light, pearl pink, and a clearer program invitation. */
 body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-reframe,.story-wish,.story-meet,.story-together,.method,.weeks,.assurance,.course,.faq,.final{filter:none}
-[data-image]{background-color:#fffaf9;background-blend-mode:screen}
-.hero__woman,.story-fear__image,.story-meet__image,.assurance__image,.final__woman{filter:saturate(.84) brightness(1.1)}
-.scene-image--desire{filter:saturate(.8) brightness(1.13)}
+[data-image]{background-color:#fffaf9;background-blend-mode:normal}
+.hero__woman,.story-fear__image,.story-meet__image,.assurance__image,.final__woman{filter:saturate(.9) brightness(1.04)}
+.scene-image--desire{filter:saturate(.9) brightness(1.05)}
 .story-desire .copy-panel,.story-fear__copy,.copy-panel--wish,.story-meet__copy,.assurance__copy{background:linear-gradient(135deg,#fffefd 0%,#fceaea 100%)}
 .program-info{position:relative;max-width:940px;margin:58px auto 0;padding:35px 42px 31px;border-top:1px solid #e4c394;border-bottom:1px solid #e4c394;background:linear-gradient(130deg,#fffefddc,#fbedebd5);box-shadow:0 18px 45px #d8b49b22;text-align:center}
 .program-info::before{position:absolute;right:-5%;bottom:-25%;width:32%;height:130%;background:url('assets/floral-prism-atmosphere-v1.png') right center/cover;content:"";opacity:.22;pointer-events:none}
