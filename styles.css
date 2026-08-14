@@ -86,3 +86,26 @@
   .method-icon{width:72px;height:70px}.method-icon--notice::before{top:7px;left:21px;width:31px;height:41px;border-width:1px}.method-icon--notice::after{right:13px;bottom:13px;width:8px;height:8px}.method-icon--explore::before{top:11px;left:17px;width:39px;height:39px;border-width:1px}.method-icon--explore::after{top:28px;left:33px;width:7px;height:7px}.method-icon--meet::before,.method-icon--meet::after{top:17px;width:29px;height:29px;border-width:1px}.method-icon--meet::before{left:12px}.method-icon--meet::after{right:12px}.method-icon--receive::before{top:19px;left:23px;width:26px;height:26px;border-width:1px}.method-icon--receive::after{top:13px;left:13px;width:46px;height:38px;border-width:1px}.method-icon--move::before{top:19px;left:30px;width:12px;height:12px;border-width:1px}.method-icon--move::after{top:14px;left:21px;width:30px;height:30px}.method__steps::before,.method__steps::after{display:none}
   .first-edition{margin-top:22px;padding:18px 12px 14px}.first-edition span{font-size:14px}.first-edition p{font-size:12px}
 }
+
+/* Mid-to-final visual direction: editorial photographs lead on small screens. */
+.method{background:linear-gradient(145deg,#fffdfb 0%,#fff7f2 45%,#f5e1dc 100%)}
+.method::after{position:absolute;top:-5%;left:-12%;width:42%;height:44%;background:url('assets/floral-prism-atmosphere-v1.png') center/cover;content:"";opacity:.24;pointer-events:none}
+.method__heading,.method__steps{z-index:2}
+.weeks{background:linear-gradient(130deg,#fffaf6e8 0%,#f7e3dddb 52%,#fffaf6e8 100%),url('assets/floral-prism-atmosphere-v1.png') center/cover}
+.week{border-color:#efdcc5;background:linear-gradient(145deg,#fffefa,#fff8f4);box-shadow:0 18px 35px #c89b7a24}
+.week__photo{position:relative}.week__photo::after{position:absolute;inset:0;background:linear-gradient(135deg,#fff8f31c,transparent 55%,#e7bf8640);content:""}
+.week--one .week__photo{filter:saturate(.88) brightness(1.04)}
+.week--two .week__photo{filter:saturate(.96) brightness(1.07)}
+.week--three .week__photo{filter:saturate(1.02) brightness(1.08)}
+.week--four .week__photo{filter:saturate(1.1) brightness(1.13)}
+.course{background:linear-gradient(130deg,#f5dfd7dc 0%,#fffaf4eb 48%,#f9e9dfdd 100%),url('assets/floral-prism-atmosphere-v1.png') center/cover}
+.course::after{position:absolute;right:-6%;bottom:-10%;width:34%;height:42%;background:url('assets/twin-leaf-jewel-v1.png') center/cover;content:"";opacity:.2;mix-blend-mode:multiply;pointer-events:none}
+.final{background:linear-gradient(120deg,#fffaf3e5 0%,#f8ddd5bb 52%,#f3cfca9e 100%),url('assets/floral-prism-atmosphere-v1.png') center/cover}
+.final__opening p{margin:0 0 23px}.final__turn{margin:42px 0 70px!important}.final__copy h2{margin:0;color:#a45f61;letter-spacing:.035em}.final__question{margin-top:72px}.final__question p{margin-bottom:12px}.final__brand-message{margin-top:76px}.final__brand-message h3{margin:0}.final__brand-message .brand-title{margin:58px 0!important}.final__brand-message>p:last-child{margin-bottom:0}.final .button{margin-top:52px}
+
+@media(max-width:850px){
+  .method{padding-top:88px;padding-bottom:91px}.method::after{top:auto;bottom:-3%;left:-18%;width:90%;height:25%;opacity:.34}.method__steps{gap:17px}.method__steps li{border-bottom-color:#e6ccb0}.method-icon{opacity:.92}
+  .weeks{padding:84px var(--gutter);background-position:55% center}.weeks__intro h2{font-size:31px}.weeks__grid{display:grid;grid-template-columns:1fr;gap:25px;margin:42px auto 36px}.week{display:block;min-height:0;border:0;border-radius:1px;box-shadow:0 18px 34px #c3967928}.week__photo{display:block;height:224px;min-height:224px;background-size:cover}.week__copy{display:block;padding:25px 22px 28px;background:linear-gradient(145deg,#fffefbf2,#fff7f1ec)}.week__copy span,.week__copy em,.week__copy h3,.week__copy p{display:block}.week__copy span{font-size:13px}.week__copy em{margin-top:6px;font-size:15px}.week__copy h3{font-size:21px}.week__copy p{font-size:13px;line-height:1.85}.weeks__grid .week:nth-child(1) .week__photo{background-position:center 52%}.weeks__grid .week:nth-child(2) .week__photo{background-position:center 48%}.weeks__grid .week:nth-child(3) .week__photo{background-position:center 43%}.weeks__grid .week:nth-child(4) .week__photo{background-position:center 42%}.weeks__details{margin-top:39px}
+  .course::after{right:-13%;bottom:-2%;width:52%;height:22%;opacity:.16}.course-card{box-shadow:0 17px 35px #c3967929}
+  .final{padding-bottom:104px;background-position:62% center}.final__copy{padding-top:76px;padding-bottom:0}.final__opening p{margin-bottom:31px;font-size:17px}.final__turn{margin:53px 0 86px!important;font-size:17px}.final__copy h2{font-size:clamp(27px,7vw,30px);line-height:1.7;white-space:nowrap}.final__question{margin-top:82px}.final__question p{font-size:17px;line-height:2}.final__brand-message{margin-top:96px}.final__brand-message h3{font-size:30px;line-height:1.65}.final__brand-message .brand-title{margin:75px 0!important;font-size:72px}.final__brand-message>p:last-child{font-size:16px}.final .button{margin-top:63px}
+}
