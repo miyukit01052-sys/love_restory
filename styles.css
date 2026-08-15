@@ -223,3 +223,6 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
 .method__steps li:nth-child(3) .step-number{color:#a96d69}
 
 @media(max-width:850px){.method{padding:80px var(--gutter);background:linear-gradient(165deg,#fffdfc,#fceded 58%,#fffdfb)}.method::before{right:-43%;bottom:-7%;width:105%;height:44%;opacity:.19}.method__steps{display:grid;margin-top:46px;gap:0;grid-template-columns:1fr}.method__steps li{display:flex;min-height:0;padding:27px 20px 31px;border-bottom:1px solid rgba(225,190,169,.72);text-align:center}.method__steps li+li::before{display:none}.method__steps li+li::after{display:none}.method__steps li:nth-child(3){margin:9px 0;padding-block:37px;background:radial-gradient(ellipse at center,#f9e5e3ba 0%,#fffaf900 72%)}.method__steps li:nth-child(3)::after{display:none}.step-number{margin-bottom:10px;font-size:12px}.method__steps em{margin:0 0 9px;font-size:18px}.method__steps p{max-width:280px;font-size:14px;line-height:1.85}.method__steps li:nth-child(3) em{font-size:20px}}
+
+/* The Journey cards stand on their own; no line crosses their photographs. */
+.weeks__grid::after{display:none!important}
