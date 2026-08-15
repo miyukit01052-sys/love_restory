@@ -206,3 +206,20 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
 .method-icon--move::after{top:31px;left:40px;width:28px;height:28px;background:conic-gradient(from 45deg at 50% 50%,transparent 0 11%,#c88e80 11% 25%,transparent 25% 61%,#e8c5c2 61% 75%,transparent 75% 100%);transform:rotate(45deg)}
 
 @media(max-width:850px){.method__steps{gap:42px}.method__steps li{display:flex;min-height:auto;grid-template-columns:none;align-items:center;padding:0;text-align:center}.method__steps li+li::before{display:none}.method-icon{width:104px;height:96px;margin:0 auto 12px}.method__steps .step-number,.method__steps em,.method__steps p{grid-column:auto;margin-inline:0;text-align:center}.method__steps em{margin-top:2px;margin-bottom:6px}.method__steps p{font-size:13px;line-height:1.8}}
+
+/* Re:Meet Method — words, not icons, are the five quiet charms. */
+.method{padding-block:clamp(92px,10vw,135px);background:linear-gradient(165deg,#fffdfc 0%,#fff8f7 57%,#fffdfb 100%)}
+.method::before{right:-14%;bottom:-18%;width:61%;height:66%;opacity:.16}
+.method__steps{max-width:1240px;margin-top:62px;gap:0}
+.method__steps li{min-height:148px;padding:9px 20px 22px}
+.method-icon{display:none!important}
+.method__steps li+li::before{top:13px;left:-12px;width:24px;border-color:rgba(201,153,127,.6)}
+.method__steps li+li::after{position:absolute;top:10px;left:50%;z-index:-1;width:7px;height:7px;border:1px solid #d6ae9a;border-radius:50%;background:#fffdfa;content:"";transform:translateX(-50%)}
+.method__steps li:nth-child(3)::after{top:-13px;left:50%;width:calc(100% - 10px);height:140px;border:0;border-radius:50%;background:radial-gradient(ellipse at center,#f9e5e4a8 0%,#fffaf900 67%);transform:translateX(-50%)}
+.step-number{margin-bottom:11px;color:#bc8179;font-size:13px;letter-spacing:.16em}
+.method__steps em{margin-bottom:12px;color:#a96d69;font-size:clamp(16px,1.25vw,19px);letter-spacing:.055em}
+.method__steps p{max-width:185px;margin:0 auto;color:#5f504c;font-size:14px;line-height:1.85}
+.method__steps li:nth-child(3) em{color:#9e6265;font-size:clamp(18px,1.45vw,22px);letter-spacing:.09em}
+.method__steps li:nth-child(3) .step-number{color:#a96d69}
+
+@media(max-width:850px){.method{padding:80px var(--gutter);background:linear-gradient(165deg,#fffdfc,#fceded 58%,#fffdfb)}.method::before{right:-43%;bottom:-7%;width:105%;height:44%;opacity:.19}.method__steps{display:grid;margin-top:46px;gap:0;grid-template-columns:1fr}.method__steps li{display:flex;min-height:0;padding:27px 20px 31px;border-bottom:1px solid rgba(225,190,169,.72);text-align:center}.method__steps li+li::before{display:none}.method__steps li+li::after{display:none}.method__steps li:nth-child(3){margin:9px 0;padding-block:37px;background:radial-gradient(ellipse at center,#f9e5e3ba 0%,#fffaf900 72%)}.method__steps li:nth-child(3)::after{display:none}.step-number{margin-bottom:10px;font-size:12px}.method__steps em{margin:0 0 9px;font-size:18px}.method__steps p{max-width:280px;font-size:14px;line-height:1.85}.method__steps li:nth-child(3) em{font-size:20px}}
