@@ -1,6 +1,6 @@
 /* 公開前に、このファイルだけを書き換えるとリンクと写真を差し替えられます。 */
 window.RESTORY_CONFIG = {
-  applyUrl: '#', // 申込・決済URLが確定したら差し替え
+  applyUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdJQvkXNNMogj_PWOSVBvsX3O5MyK-XxeXKMJ3dr808LwKT8g/viewform?usp=header', // 申込フォーム
   images: {
     hero: 'assets/hero-v1.png', // 窓辺の自然光の中で、自分と向き合う女性。ときめきと内省の入口。
     desire: 'assets/desire-v1.png', // 美しい空間で未来を見つめる女性。願いと憧れ。
