@@ -237,9 +237,10 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
 .origin-story__chapter:nth-of-type(even){max-width:620px;margin-left:auto}
 .origin-story__chapter--last{margin-bottom:0}
 .origin-story__chapter p{margin:0 0 1.45em}
+.origin-story__soft-emphasis{margin:2.25em 0 .45em!important;color:#a8696a;font-size:clamp(17px,1.55vw,22px);line-height:1.9}
 .origin-story__chapter blockquote{margin:clamp(35px,5vw,62px) 0;padding:clamp(17px,2vw,25px) 0;border:0;color:#a8696a;font:clamp(20px,2.25vw,31px)/1.85 var(--serif);letter-spacing:.015em}
 .origin-story__chapter blockquote::before{display:block;width:46px;margin-bottom:22px;border-top:1px solid #d5aa90;content:""}
 .origin-story__chapter:nth-of-type(3) blockquote{color:#976365}
 .origin-story__chapter--last blockquote{color:#aa6d70}
 
-@media(max-width:850px){.origin-story{padding:86px var(--gutter) 98px;background:linear-gradient(155deg,#fffefd,#fff6f6 55%,#f8e9eb)}.origin-story::before{top:-4%;right:-53%;width:112%;height:25%;opacity:.16}.origin-story::after{bottom:-2%;left:-42%;width:105%;height:19%;opacity:.08}.origin-story h2{margin-bottom:61px;font-size:30px}.origin-story__chapter,.origin-story__chapter:nth-of-type(even){max-width:none;margin:0 0 78px;font-size:15px;line-height:2.05}.origin-story__chapter p{margin-bottom:1.5em}.origin-story__chapter blockquote{margin:42px 0;padding:16px 0;font-size:21px;line-height:1.85}.origin-story__chapter blockquote::before{margin-bottom:18px}.origin-story__chapter--last{margin-bottom:0}}
+@media(max-width:850px){.origin-story{padding:86px var(--gutter) 98px;background:linear-gradient(155deg,#fffefd,#fff6f6 55%,#f8e9eb)}.origin-story::before{top:-4%;right:-53%;width:112%;height:25%;opacity:.16}.origin-story::after{bottom:-2%;left:-42%;width:105%;height:19%;opacity:.08}.origin-story h2{margin-bottom:61px;font-size:30px}.origin-story__chapter,.origin-story__chapter:nth-of-type(even){max-width:none;margin:0 0 78px;font-size:15px;line-height:2.05}.origin-story__chapter p{margin-bottom:1.5em}.origin-story__soft-emphasis{margin-top:2.1em!important;font-size:18px}.origin-story__chapter blockquote{margin:42px 0;padding:16px 0;font-size:21px;line-height:1.85}.origin-story__chapter blockquote::before{margin-bottom:18px}.origin-story__chapter--last{margin-bottom:0}}
