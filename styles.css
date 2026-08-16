@@ -272,8 +272,8 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
 
 @media(max-width:767px){.origin-profile__stories article,.origin-profile__stories article:nth-child(even),.origin-profile__stories article:nth-child(3){display:block;width:100%;margin:0 0 39px;padding:0;min-height:0}.origin-profile__stories article span{display:block;margin:0 0 10px;font-size:10px}.origin-profile__stories article p{display:block;margin:0;font-size:14px;line-height:1.85}.origin-profile__stories article i{display:block;margin:13px 0;color:#c99a7d;font-size:0;text-align:left;transform:none}.origin-profile__stories article i::before{content:"↓";font:18px/1 var(--display)}.origin-profile__stories article strong{display:block;margin:0;color:#a56b6b;font-size:16px;line-height:1.85}.origin-profile__stories article:last-child{margin-bottom:0}}
 
-/* Profile accents use one photographic asset only — no CSS jewellery or pearl shapes. */
-.origin-profile{background:#fffaf9 url('assets/founder-profile-jewellery-v2.png') center/cover no-repeat}.origin-profile__name::before,.origin-profile__name::after,.origin-profile__story>p::before,.origin-profile__story>p::after,.origin-profile__stories::before,.origin-profile__stories span::before,.origin-profile__stories span::after,.origin-profile__stories article::before,.origin-profile__stories article::after{display:none!important;content:none!important}
+/* Disable the former CSS-made profile ornaments; photographic assets are used instead. */
+.origin-profile__name::before,.origin-profile__name::after,.origin-profile__story>p::before,.origin-profile__story>p::after,.origin-profile__stories::before,.origin-profile__stories span::before,.origin-profile__stories span::after,.origin-profile__stories article::before,.origin-profile__stories article::after{display:none!important;content:none!important}
 
 @media(max-width:767px){.origin-profile{background-image:none}}
 
@@ -282,80 +282,149 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
 
 @media(max-width:850px){.origin-profile__stories{box-sizing:border-box;max-width:520px;margin-right:auto;margin-left:auto;padding-right:clamp(24px,7vw,32px);padding-left:clamp(24px,7vw,32px)}.origin-profile__stories article span,.origin-profile__stories article p,.origin-profile__stories article i,.origin-profile__stories article strong{width:100%}}
 
-/* Founder profile: use the supplied photographic jewellery frames, not CSS-made ornaments. */
+/* Final founder profile: a quiet paper-like surface with cropped photographic ornaments. */
 .origin-profile{
-  background-color:#fffaf9;
-  background-image:url('assets/founder-profile-frame-1.png');
-  background-position:center top;
-  background-repeat:no-repeat;
-  background-size:100% auto;
+  isolation:isolate;
+  overflow:visible;
+  padding-bottom:96px;
+  border-top:0;
+  background:linear-gradient(180deg,#fffefd 0%,#fffafa 54%,#fbeff1 100%);
 }
 .origin-profile__story{
-  position:relative;
   margin-top:clamp(42px,5vw,64px);
-  padding:clamp(42px,5vw,68px) 0 clamp(34px,4vw,54px);
-  background-image:url('assets/founder-profile-frame-2.png');
-  background-position:center center;
-  background-repeat:no-repeat;
-  background-size:100% 100%;
+  padding:0;
+  background:none;
+}
+.origin-profile__ornament{
+  position:absolute;
+  z-index:0;
+  display:block;
+  pointer-events:none;
+  user-select:none;
+  object-fit:cover;
+}
+.origin-profile__ornament--top{
+  top:-82px;
+  right:-144px;
+  width:330px;
+  height:258px;
+  object-position:right top;
+}
+.origin-profile__ornament--bottom{
+  right:-150px;
+  bottom:-30px;
+  width:390px;
+  height:190px;
+  object-position:right bottom;
+}
+.origin-profile__name,
+.origin-profile__intro,
+.origin-profile__story,
+.origin-profile__study{
+  position:relative;
+  z-index:1;
+}
+.origin-profile__intro{
+  max-width:580px;
+}
+.origin-profile__study{
+  max-width:510px;
+  margin:clamp(52px,6vw,78px) auto 0;
+  padding:0;
+  border:0;
+  color:#806a62;
+  font:15px/2 var(--serif);
+  text-align:center;
+}
+.origin-profile__study em{
+  display:block;
+  margin:0 0 18px;
+  color:#b7837d;
+  font:10px var(--display);
+  font-style:normal;
+  letter-spacing:.16em;
+}
+.origin-profile__study p{
+  margin:0;
+}
+.origin-profile__study p+p{
+  margin-top:22px;
+}
+.origin-profile__study strong{
+  color:#a96d70;
+  font:18px var(--serif);
+  font-weight:400;
+}
+.origin-story{
+  padding-bottom:54px;
+}
+.origin-story::after{
+  display:none;
+}
+.course{
+  background:linear-gradient(180deg,#fbeff1 0%,rgba(255,250,245,.94) 18%,rgba(248,226,219,.87) 100%),url('assets/floral-prism-atmosphere-v1.png') center/cover;
 }
 
 @media(max-width:850px){
   .origin-profile{
-    margin-top:76px;
-    padding-top:48px;
-    background-image:url('assets/founder-profile-frame-1.png');
-    background-position:center top;
-    background-size:100% auto;
+    margin-top:72px;
+    padding-top:50px;
+    padding-bottom:84px;
+    background:linear-gradient(180deg,#fffefd 0%,#fffafa 55%,#fbeff1 100%);
+  }
+  .origin-profile__ornament--top{
+    top:-76px;
+    right:-122px;
+    width:250px;
+    height:190px;
+    object-position:right top;
+  }
+  .origin-profile__ornament--bottom{
+    right:-115px;
+    bottom:-24px;
+    width:285px;
+    height:142px;
+    object-position:right bottom;
+  }
+  .origin-profile__intro{
+    box-sizing:border-box;
+    max-width:440px;
+    margin-bottom:48px;
+    padding:0 clamp(28px,8vw,32px);
   }
   .origin-profile__story{
     margin-top:40px;
-    padding:40px 0 34px;
-    background-image:url('assets/founder-profile-frame-2.png');
-    background-position:center center;
-    background-size:100% 100%;
+    padding:0;
   }
-}
-
-/* A photographic bridge carries the founder story into the course section. */
-.origin-profile__study{
-  margin-top:clamp(34px,4vw,48px);
-  padding-bottom:0;
-}
-.origin-story{
-  padding-bottom:clamp(90px,10vw,145px);
-}
-.origin-story::after{
-  display:block;
-  position:absolute;
-  z-index:0;
-  right:auto;
-  bottom:0;
-  left:50%;
-  width:min(100%,1024px);
-  height:clamp(122px,15vw,205px);
-  background:url('assets/founder-profile-frame-2.png') center bottom/100% auto no-repeat;
-  content:"";
-  opacity:.78;
-  mix-blend-mode:normal;
-  transform:translateX(-50%);
-}
-.course{
-  background:linear-gradient(180deg,#f9e9eb 0%,rgba(255,250,245,.94) 18%,rgba(248,226,219,.87) 100%),url('assets/floral-prism-atmosphere-v1.png') center/cover;
-}
-
-@media(max-width:850px){
-  .origin-story{
-    padding-bottom:90px;
+  .origin-profile__stories{
+    max-width:520px;
+    padding-right:clamp(28px,8vw,32px);
+    padding-left:clamp(28px,8vw,32px);
+  }
+  .origin-profile__stories article,
+  .origin-profile__stories article:nth-child(even),
+  .origin-profile__stories article:nth-child(3){
+    margin-bottom:30px;
   }
   .origin-profile__study{
-    margin-top:32px;
-    padding-bottom:0;
+    box-sizing:border-box;
+    max-width:440px;
+    margin-top:47px;
+    padding:0 clamp(28px,8vw,32px);
+    font-size:14px;
+    line-height:1.95;
   }
-  .origin-story::after{
-    height:112px;
-    background-position:center bottom;
-    background-size:100% auto;
-    opacity:.74;
+  .origin-profile__study em{
+    margin-bottom:15px;
+    font-size:9px;
+  }
+  .origin-profile__study p+p{
+    margin-top:18px;
+  }
+  .origin-profile__study strong{
+    font-size:17px;
+  }
+  .origin-story{
+    padding-bottom:42px;
   }
 }
