@@ -281,3 +281,38 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
 @media(max-width:850px){.origin-profile__stories{width:100%}.origin-profile__stories article,.origin-profile__stories article:nth-child(even),.origin-profile__stories article:nth-child(3){display:flex;align-items:flex-start;width:100%;min-height:0;margin:0 0 34px;padding:0;flex-direction:column;gap:0}.origin-profile__stories article:last-child{margin-bottom:0}.origin-profile__stories article span,.origin-profile__stories article p,.origin-profile__stories article i,.origin-profile__stories article strong{align-self:flex-start;width:86%;margin-left:0;text-align:left}.origin-profile__stories article span{margin-bottom:9px;font-size:10px}.origin-profile__stories article p{margin:0;color:#78645e;font-size:14px;line-height:1.85}.origin-profile__stories article i{display:block;margin-top:11px;margin-bottom:11px;color:#c99a7d;font-size:0;line-height:1;transform:none}.origin-profile__stories article i::before{content:"↓";font:17px/1 var(--display)}.origin-profile__stories article strong{display:block;margin:0;color:#a56b6b;font-size:16px;line-height:1.85}.origin-profile__stories article strong br{display:none}}
 
 @media(max-width:850px){.origin-profile__stories{box-sizing:border-box;max-width:520px;margin-right:auto;margin-left:auto;padding-right:clamp(24px,7vw,32px);padding-left:clamp(24px,7vw,32px)}.origin-profile__stories article span,.origin-profile__stories article p,.origin-profile__stories article i,.origin-profile__stories article strong{width:100%}}
+
+/* Founder profile: use the supplied photographic jewellery frames, not CSS-made ornaments. */
+.origin-profile{
+  background-color:#fffaf9;
+  background-image:url('assets/founder-profile-frame-1.png');
+  background-position:center top;
+  background-repeat:no-repeat;
+  background-size:100% auto;
+}
+.origin-profile__story{
+  position:relative;
+  margin-top:clamp(42px,5vw,64px);
+  padding:clamp(42px,5vw,68px) 0 clamp(34px,4vw,54px);
+  background-image:url('assets/founder-profile-frame-2.png');
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+}
+
+@media(max-width:850px){
+  .origin-profile{
+    margin-top:76px;
+    padding-top:48px;
+    background-image:url('assets/founder-profile-frame-1.png');
+    background-position:center top;
+    background-size:100% auto;
+  }
+  .origin-profile__story{
+    margin-top:40px;
+    padding:40px 0 34px;
+    background-image:url('assets/founder-profile-frame-2.png');
+    background-position:center center;
+    background-size:100% 100%;
+  }
+}
