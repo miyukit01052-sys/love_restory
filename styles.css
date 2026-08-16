@@ -271,3 +271,8 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
 .origin-profile{background-image:none}.origin-profile__name::before,.origin-profile__stories span::after,.origin-profile__stories article:nth-child(2)::after,.origin-profile__stories article:nth-child(3)::after,.origin-profile__stories article:nth-child(4)::after{display:none}
 
 @media(max-width:767px){.origin-profile__stories article,.origin-profile__stories article:nth-child(even),.origin-profile__stories article:nth-child(3){display:block;width:100%;margin:0 0 39px;padding:0;min-height:0}.origin-profile__stories article span{display:block;margin:0 0 10px;font-size:10px}.origin-profile__stories article p{display:block;margin:0;font-size:14px;line-height:1.85}.origin-profile__stories article i{display:block;margin:13px 0;color:#c99a7d;font-size:0;text-align:left;transform:none}.origin-profile__stories article i::before{content:"↓";font:18px/1 var(--display)}.origin-profile__stories article strong{display:block;margin:0;color:#a56b6b;font-size:16px;line-height:1.85}.origin-profile__stories article:last-child{margin-bottom:0}}
+
+/* Profile accents use one photographic asset only — no CSS jewellery or pearl shapes. */
+.origin-profile{background:#fffaf9 url('assets/founder-profile-jewellery-v2.png') center/cover no-repeat}.origin-profile__name::before,.origin-profile__name::after,.origin-profile__story>p::before,.origin-profile__story>p::after,.origin-profile__stories::before,.origin-profile__stories span::before,.origin-profile__stories span::after,.origin-profile__stories article::before,.origin-profile__stories article::after{display:none!important;content:none!important}
+
+@media(max-width:767px){.origin-profile{background-image:none}}
