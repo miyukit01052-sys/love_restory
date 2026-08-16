@@ -22,7 +22,7 @@
         <article><span>FAMILY</span><p>家族との強い葛藤</p><i aria-hidden="true">→</i><strong>母と毎年、旅行や美食を楽しむ関係へ</strong></article>
         <article><span>LIFE</span><p>人生が崩れ、口座残高200円</p><i aria-hidden="true">→</i><strong>数十万円のジュエリーや<br>100万円ほどのバッグも<br>自分で叶えられる生活へ</strong></article>
       </div></div>
-      <div class="origin-profile__study"><em>LEARNING / BACKGROUND</em><p>心理学・マインド・コーチング・<br>カウンセリングなどを長年学び、<br>自分との関係や心について<br>学びと実践を重ねてきました。</p><p>学びへの自己投資は、<br><strong>累計700万円以上。</strong></p></div>
+      <div class="origin-profile__study"><em>LEARNING / BACKGROUND</em><p>心理学・マインド・コーチング・<br>カウンセリングなどを長年学び、<br>自分との関係や心について<br>学びと実践を重ねてきました。</p></div>
       <img class="origin-profile__ornament origin-profile__ornament--bottom" src="assets/founder-profile-frame-2.png" alt="" aria-hidden="true">`;
   }
   const observer = new IntersectionObserver((entries) => {

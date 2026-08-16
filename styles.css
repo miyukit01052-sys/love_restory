@@ -347,14 +347,6 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
 .origin-profile__study p{
   margin:0;
 }
-.origin-profile__study p+p{
-  margin-top:22px;
-}
-.origin-profile__study strong{
-  color:#a96d70;
-  font:18px var(--serif);
-  font-weight:400;
-}
 .origin-story{
   padding-bottom:54px;
 }
@@ -417,12 +409,6 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
   .origin-profile__study em{
     margin-bottom:15px;
     font-size:9px;
-  }
-  .origin-profile__study p+p{
-    margin-top:18px;
-  }
-  .origin-profile__study strong{
-    font-size:17px;
   }
   .origin-story{
     padding-bottom:42px;
