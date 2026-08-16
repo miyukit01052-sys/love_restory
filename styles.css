@@ -428,3 +428,50 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
     padding-bottom:42px;
   }
 }
+
+/* Let the real jewellery photographs dissolve into the paper-like profile surface. */
+.origin-profile{
+  padding-bottom:78px;
+  background:linear-gradient(180deg,rgba(255,255,255,.22) 0%,rgba(255,250,250,.24) 52%,rgba(251,239,241,0) 100%);
+}
+.origin-profile__ornament{
+  opacity:.94;
+  -webkit-mask-repeat:no-repeat;
+  -webkit-mask-size:100% 100%;
+  mask-repeat:no-repeat;
+  mask-size:100% 100%;
+}
+.origin-profile__ornament--top{
+  -webkit-mask-image:radial-gradient(ellipse at 100% 0%,#000 0 42%,rgba(0,0,0,.78) 57%,transparent 100%);
+  mask-image:radial-gradient(ellipse at 100% 0%,#000 0 42%,rgba(0,0,0,.78) 57%,transparent 100%);
+}
+.origin-profile__ornament--bottom{
+  -webkit-mask-image:radial-gradient(ellipse at 100% 100%,#000 0 43%,rgba(0,0,0,.8) 60%,transparent 100%);
+  mask-image:radial-gradient(ellipse at 100% 100%,#000 0 43%,rgba(0,0,0,.8) 60%,transparent 100%);
+}
+.origin-profile__stories article,
+.origin-profile__stories article:nth-child(even),
+.origin-profile__stories article:nth-child(3){
+  margin-bottom:28px;
+}
+.origin-profile__study{
+  margin-top:clamp(44px,5vw,60px);
+}
+
+@media(max-width:850px){
+  .origin-profile{
+    padding-bottom:70px;
+    background:linear-gradient(180deg,rgba(255,255,255,.18) 0%,rgba(255,250,250,.22) 56%,rgba(251,239,241,0) 100%);
+  }
+  .origin-profile__stories article,
+  .origin-profile__stories article:nth-child(even),
+  .origin-profile__stories article:nth-child(3){
+    margin-bottom:28px;
+  }
+  .origin-profile__study{
+    margin-top:40px;
+  }
+  .origin-story{
+    padding-bottom:34px;
+  }
+}
