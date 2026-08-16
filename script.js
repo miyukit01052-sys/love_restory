@@ -12,7 +12,6 @@
   const originProfile = document.querySelector('.origin-profile');
   if (originProfile) {
     originProfile.innerHTML = `
-      <img class="origin-profile__ornament origin-profile__ornament--top" src="assets/founder-profile-frame-1.png" alt="" aria-hidden="true">
       <div class="origin-profile__name"><em>FOUNDER / PROFILE</em><p>みゆ</p><span>Re:Story 主宰</span></div>
       <div class="origin-profile__intro"><p>幼少期から自己肯定感がとても低く、<br>対人恐怖症や愛着障害などに長く苦しんできました。</p><p>自分との関係を変えていく中で、<br>内面だけでなく、恋愛・仕事・家族・人生も大きく変化。</p></div>
       <div class="origin-profile__story"><p>MY STORY</p><div class="origin-profile__stories">
@@ -22,8 +21,7 @@
         <article><span>FAMILY</span><p>家族との強い葛藤</p><i aria-hidden="true">→</i><strong>母と毎年、旅行や美食を楽しむ関係へ</strong></article>
         <article><span>LIFE</span><p>人生が崩れ、口座残高200円</p><i aria-hidden="true">→</i><strong>数十万円のジュエリーや<br>100万円ほどのバッグも<br>自分で叶えられる生活へ</strong></article>
       </div></div>
-      <div class="origin-profile__study"><em>LEARNING / BACKGROUND</em><p>心理学・マインド・コーチング・<br>カウンセリングなどを長年学び、<br>自分との関係や心について<br>学びと実践を重ねてきました。</p></div>
-      <img class="origin-profile__ornament origin-profile__ornament--bottom" src="assets/founder-profile-frame-2.png" alt="" aria-hidden="true">`;
+      <div class="origin-profile__study"><em>LEARNING / BACKGROUND</em><p>心理学・マインド・コーチング・<br>カウンセリングなどを長年学び、<br>自分との関係や心について<br>学びと実践を重ねてきました。</p></div>`;
   }
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

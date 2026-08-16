@@ -295,28 +295,6 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
   padding:0;
   background:none;
 }
-.origin-profile__ornament{
-  position:absolute;
-  z-index:0;
-  display:block;
-  pointer-events:none;
-  user-select:none;
-  object-fit:cover;
-}
-.origin-profile__ornament--top{
-  top:-82px;
-  right:-144px;
-  width:330px;
-  height:258px;
-  object-position:right top;
-}
-.origin-profile__ornament--bottom{
-  right:-150px;
-  bottom:-30px;
-  width:390px;
-  height:190px;
-  object-position:right bottom;
-}
 .origin-profile__name,
 .origin-profile__intro,
 .origin-profile__story,
@@ -364,20 +342,6 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
     padding-bottom:84px;
     background:linear-gradient(180deg,#fffefd 0%,#fffafa 55%,#fbeff1 100%);
   }
-  .origin-profile__ornament--top{
-    top:-76px;
-    right:-122px;
-    width:250px;
-    height:190px;
-    object-position:right top;
-  }
-  .origin-profile__ornament--bottom{
-    right:-115px;
-    bottom:-24px;
-    width:285px;
-    height:142px;
-    object-position:right bottom;
-  }
   .origin-profile__intro{
     box-sizing:border-box;
     max-width:440px;
@@ -415,25 +379,79 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
   }
 }
 
-/* Let the real jewellery photographs dissolve into the paper-like profile surface. */
+/* Founder profile, reduced to editorial type, fine rules, and light. */
+.origin-profile{
+  padding-top:clamp(62px,7vw,92px);
+  padding-bottom:clamp(58px,7vw,84px);
+  background:linear-gradient(180deg,rgba(255,255,255,.12) 0%,rgba(255,249,250,.3) 52%,rgba(251,239,241,.08) 100%);
+}
+.origin-profile__name{
+  margin-bottom:clamp(46px,5vw,66px);
+}
+.origin-profile__name em{
+  color:#b17a78;
+  letter-spacing:.2em;
+}
+.origin-profile__story{
+  margin-top:clamp(46px,5vw,68px);
+}
+.origin-profile__story>p{
+  width:max-content;
+  max-width:72%;
+  margin:0 auto clamp(30px,3vw,38px);
+  padding:0 18px 12px;
+  border-bottom:1px solid rgba(207,173,138,.62);
+  color:#ae7473;
+  letter-spacing:.19em;
+}
+.origin-profile__study{
+  margin-top:clamp(46px,5vw,62px);
+  color:#806a62;
+}
+.origin-profile__study em{
+  color:#b17a78;
+  letter-spacing:.19em;
+}
+.origin-story{
+  padding-bottom:48px;
+}
+
+@media(max-width:850px){
+  .origin-profile{
+    margin-top:72px;
+    padding-top:62px;
+    padding-bottom:58px;
+    background:linear-gradient(180deg,rgba(255,255,255,.1) 0%,rgba(255,249,250,.28) 57%,rgba(251,239,241,.06) 100%);
+  }
+  .origin-profile__name{
+    margin-bottom:42px;
+  }
+  .origin-profile__story{
+    margin-top:42px;
+  }
+  .origin-profile__story>p{
+    max-width:76%;
+    margin-bottom:29px;
+    padding:0 14px 10px;
+    font-size:12px;
+  }
+  .origin-profile__stories article,
+  .origin-profile__stories article:nth-child(even),
+  .origin-profile__stories article:nth-child(3){
+    margin-bottom:30px;
+  }
+  .origin-profile__study{
+    margin-top:44px;
+  }
+  .origin-story{
+    padding-bottom:34px;
+  }
+}
+
+/* Keep the founder story compact while the light surface fades into the next section. */
 .origin-profile{
   padding-bottom:78px;
   background:linear-gradient(180deg,rgba(255,255,255,.22) 0%,rgba(255,250,250,.24) 52%,rgba(251,239,241,0) 100%);
-}
-.origin-profile__ornament{
-  opacity:.94;
-  -webkit-mask-repeat:no-repeat;
-  -webkit-mask-size:100% 100%;
-  mask-repeat:no-repeat;
-  mask-size:100% 100%;
-}
-.origin-profile__ornament--top{
-  -webkit-mask-image:radial-gradient(ellipse at 100% 0%,#000 0 42%,rgba(0,0,0,.78) 57%,transparent 100%);
-  mask-image:radial-gradient(ellipse at 100% 0%,#000 0 42%,rgba(0,0,0,.78) 57%,transparent 100%);
-}
-.origin-profile__ornament--bottom{
-  -webkit-mask-image:radial-gradient(ellipse at 100% 100%,#000 0 43%,rgba(0,0,0,.8) 60%,transparent 100%);
-  mask-image:radial-gradient(ellipse at 100% 100%,#000 0 43%,rgba(0,0,0,.8) 60%,transparent 100%);
 }
 .origin-profile__stories article,
 .origin-profile__stories article:nth-child(even),
