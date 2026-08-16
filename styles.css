@@ -379,6 +379,59 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
   }
 }
 
+/* Keep the VIP price plate calm and let the final CTA carry one last jewellery glimmer. */
+.course-card--vip{
+  background:linear-gradient(145deg,#fffefd 0%,#fff8fa 62%,#fdf3f4 100%);
+}
+.course-card--vip::before{
+  display:none!important;
+  background-image:none!important;
+  content:none!important;
+}
+.course-card--vip .first-edition{
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(255,246,248,.92));
+}
+.final__copy{
+  isolation:isolate;
+}
+.final__copy>*{
+  position:relative;
+  z-index:1;
+}
+.final::after{
+  right:-4%;
+  bottom:-4%;
+  width:43%;
+  height:34%;
+  background:url('assets/founder-profile-frame-1.png') right bottom/460px auto no-repeat;
+  opacity:.42;
+  mix-blend-mode:normal;
+  -webkit-mask-image:radial-gradient(ellipse at 100% 100%,#000 0 43%,rgba(0,0,0,.7) 63%,transparent 100%);
+  -webkit-mask-repeat:no-repeat;
+  -webkit-mask-size:100% 100%;
+  mask-image:radial-gradient(ellipse at 100% 100%,#000 0 43%,rgba(0,0,0,.7) 63%,transparent 100%);
+  mask-repeat:no-repeat;
+  mask-size:100% 100%;
+}
+
+@media(max-width:850px){
+  .course-card--vip{
+    background:linear-gradient(145deg,#fffefd 0%,#fff8fa 64%,#fdf3f4 100%);
+  }
+  .course-card--vip .first-edition{
+    background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(255,246,248,.94));
+  }
+  .final::after{
+    right:-38px;
+    bottom:12px;
+    width:285px;
+    height:212px;
+    background-position:right bottom;
+    background-size:330px auto;
+    opacity:.38;
+  }
+}
+
 /* Founder profile, reduced to editorial type, fine rules, and light. */
 .origin-profile{
   padding-top:clamp(62px,7vw,92px);
