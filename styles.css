@@ -316,3 +316,46 @@ body{background:#fffdfc}.hero,.story-desire,.story-fear,.story-blame,.story-refr
     background-size:100% 100%;
   }
 }
+
+/* A photographic bridge carries the founder story into the course section. */
+.origin-profile__study{
+  margin-top:clamp(34px,4vw,48px);
+  padding-bottom:0;
+}
+.origin-story{
+  padding-bottom:clamp(90px,10vw,145px);
+}
+.origin-story::after{
+  display:block;
+  position:absolute;
+  z-index:0;
+  right:auto;
+  bottom:0;
+  left:50%;
+  width:min(100%,1024px);
+  height:clamp(122px,15vw,205px);
+  background:url('assets/founder-profile-frame-2.png') center bottom/100% auto no-repeat;
+  content:"";
+  opacity:.78;
+  mix-blend-mode:normal;
+  transform:translateX(-50%);
+}
+.course{
+  background:linear-gradient(180deg,#f9e9eb 0%,rgba(255,250,245,.94) 18%,rgba(248,226,219,.87) 100%),url('assets/floral-prism-atmosphere-v1.png') center/cover;
+}
+
+@media(max-width:850px){
+  .origin-story{
+    padding-bottom:90px;
+  }
+  .origin-profile__study{
+    margin-top:32px;
+    padding-bottom:0;
+  }
+  .origin-story::after{
+    height:112px;
+    background-position:center bottom;
+    background-size:100% auto;
+    opacity:.74;
+  }
+}
